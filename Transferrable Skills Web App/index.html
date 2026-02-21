@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insurance Career Match — Find Your Fit</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <h1 class="logo">Insurance Career Match</h1>
+      <p class="tagline">Your skills. Your interests. Your next role in insurance.</p>
+    </header>
+
+    <main class="main">
+      <section class="intro">
+        <p>
+          The insurance industry needs talented people from every background. Share a bit about yourself below,
+          and we’ll suggest insurance roles that fit your experience and goals—helping bridge the workforce gap
+          one match at a time.
+        </p>
+      </section>
+
+      <form id="profile-form" class="form" autocomplete="off">
+        <fieldset class="fieldset">
+          <legend>About you</legend>
+          <label>
+            <span>Age (optional)</span>
+            <input type="number" name="age" id="age" min="16" max="100" placeholder="e.g. 28" />
+          </label>
+          <label>
+            <span>Location or work preference (optional)</span>
+            <input type="text" name="location" id="location" placeholder="e.g. Remote, Chicago, hybrid" />
+          </label>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Skills & strengths</legend>
+          <label>
+            <span>List your top skills (comma-separated)</span>
+            <textarea name="skills" id="skills" rows="3" placeholder="e.g. Data analysis, customer service, Excel, communication, project management"></textarea>
+          </label>
+          <label>
+            <span>Certifications or education (optional)</span>
+            <input type="text" name="certifications" id="certifications" placeholder="e.g. Bachelor's in Business, CPCU, Salesforce" />
+          </label>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Interests & work style</legend>
+          <label>
+            <span>What kind of work do you enjoy?</span>
+            <textarea name="work_preferences" id="work_preferences" rows="3" placeholder="e.g. Problem-solving, helping people, working with data, leading teams"></textarea>
+          </label>
+          <label>
+            <span>Industries or topics you’re interested in (optional)</span>
+            <input type="text" name="interests" id="interests" placeholder="e.g. Risk, technology, claims, underwriting" />
+          </label>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Experience</legend>
+          <label>
+            <span>Previous work experience (roles, years, key duties)</span>
+            <textarea name="experience" id="experience" rows="4" placeholder="e.g. 3 years in retail management; 2 years customer support; handled scheduling and conflict resolution" required></textarea>
+          </label>
+          <label>
+            <span>Anything else you’d like us to consider? (optional)</span>
+            <textarea name="additional" id="additional" rows="2" placeholder="e.g. Career goals, preferred schedule, willingness to get licensed"></textarea>
+          </label>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" id="submit-btn" class="btn btn-primary">Get my job recommendations</button>
+          <button type="button" id="reset-btn" class="btn btn-secondary">Clear form</button>
+        </div>
+      </form>
+
+      <section id="results-section" class="results-section hidden">
+        <h2>Your insurance career recommendations</h2>
+        <div id="results-content" class="results-content"></div>
+        <button type="button" id="back-btn" class="btn btn-secondary">Try again with different answers</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built to help reduce systemic workforce risk in insurance by connecting people with roles that fit their transferable skills.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

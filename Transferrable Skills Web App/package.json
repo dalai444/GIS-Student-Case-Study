@@ -1,0 +1,17 @@
+{
+  "name": "insurance-career-match",
+  "version": "1.0.0",
+  "description": "Web app that recommends insurance industry jobs based on skills, interests, and experience",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["insurance", "career", "gemini", "workforce"],
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
