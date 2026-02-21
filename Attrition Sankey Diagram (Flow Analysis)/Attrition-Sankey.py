@@ -51,7 +51,7 @@ for year in range(1, YEARS + 1):
     # Node labels and positions for this year
     x_col = 0.01 + (year / YEARS) * 0.98
     node_labels.extend([
-        f"Retained Y{year}",
+        f"Retained Y{year} ({retained:,})",
         f"Retirements Y{year}",
         f"Quits Y{year}",
     ])
